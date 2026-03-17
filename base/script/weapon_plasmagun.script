@@ -82,7 +82,7 @@ void weapon_plasmagun::Idle() {
 				}
 			}
 		}
-		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip < clip_size ) ) {
+		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip == 0 ) ) {
 			netReload();
 			weaponState( "Reload", PLASMAGUN_IDLE_TO_RELOAD );
 		}

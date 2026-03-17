@@ -159,7 +159,7 @@ void weapon_chaingun::Idle() {
 				}
 			}
 		}
-		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip < clip_size ) ) {
+		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip == 0 ) ) {
 			netReload();
 			weaponState( "Reload", CHAINGUN_IDLE_TO_RELOAD );
 		}

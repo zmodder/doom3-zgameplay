@@ -83,7 +83,7 @@ void weapon_machinegun::Idle() {
 				}
 			}
 		}
-		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip < clip_size ) ) {
+		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip == 0 ) ) {
 			netReload();
 			weaponState( "Reload", MACHINEGUN_IDLE_TO_RELOAD );
 		}
