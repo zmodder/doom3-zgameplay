@@ -11,11 +11,14 @@ cd "$(dirname "$0")"
 DEST_DIR="$1"
 
 # 2. Check if the destination is a valid directory
-if [ ! -d "$DEST_DIR" ]; then
-    echo "Error: Directory '$DEST_DIR' does not exist."
+if [ ! -d "$DEST_DIR/base" ]; then
+    echo "Error: Directory '$DEST_DIR/base' does not exist."
     exit 1
 fi
 
 # 3. Create the pk4 files
 cd base
-zip -r "$DEST_DIR/base/z_zgameplay.pk4" .
+
+DEST_FILE=$DEST_DIR/base/z_zgameplay.pk4
+rm -f $DEST_FILE
+zip -r "$DEST_FILE" .
