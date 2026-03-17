@@ -5,7 +5,7 @@ weapon_machinegun.script
 ***********************************************************************/
 
 #define MACHINEGUN_FIRERATE			0.1		// ~10 per second
-#define MACHINEGUN_LOWAMMO			10
+#define MACHINEGUN_LOWAMMO			8
 #define MACHINEGUN_NUMPROJECTILES	1
 
 // blend times
