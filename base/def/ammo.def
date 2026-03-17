@@ -163,7 +163,7 @@ entityDef ammo_grenade_small {
 	"snd_respawn"			"sound_item_respawn"
 	"size"					"32 32 32"
 	"inv_weapon"			"weapon_handgrenade"
-	"inv_ammo_grenades"		"5"
+	"inv_ammo_grenades"		"4"
 	"inv_item"				"4"
 	"inv_name"				"grenades"
 	"editor_copy100"		"inv_item"
