@@ -108,7 +108,7 @@ void weapon_rocketlauncher::Idle() {
 				}
 			}
 		}
-		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip < clip_size ) ) {
+		if ( WEAPON_RELOAD && ( ammoAvailable() > ammoClip ) && ( ammoClip == 0 ) ) {
 			netReload();
 			weaponState( "Reload", ROCKETLAUNCHER_IDLE_TO_RELOAD );
 		}
