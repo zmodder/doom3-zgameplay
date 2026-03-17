@@ -6,6 +6,8 @@ This script contains any player specific code.
 
 ***********************************************************************/
 
+#define ARMOR_PROTECTION "0.4"
+
 object player : player_base {
 	weapon_base weapon;
 	boolean		weapon_changed;
@@ -172,6 +174,9 @@ void player::Torso_Idle() {
 		}
 		if ( AI_PAIN ) {
 			animState( ANIMCHANNEL_TORSO, "Torso_Pain", 0 );
+		}
+		if ( sys.getcvar( "g_armorProtection" ) != ARMOR_PROTECTION ) {
+			sys.setcvar( "g_armorProtection", ARMOR_PROTECTION );
 		}
 	}
 }
