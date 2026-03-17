@@ -5,7 +5,7 @@ weapon_plasmagun.script
 ***********************************************************************/
 
 #define PLASMAGUN_FIRERATE			0.125 //changed by Tim
-#define PLASMAGUN_LOWAMMO			10
+#define PLASMAGUN_LOWAMMO			6
 #define PLASMAGUN_NUMPROJECTILES	1
 
 // blend times
